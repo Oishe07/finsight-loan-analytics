@@ -2,7 +2,7 @@
 import streamlit as st
 from groq import Groq
 
-API_KEY = "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"
+API_KEY = st.secrets["GROQ_API_KEY"]
 MODEL   = "llama-3.3-70b-versatile"
 
 def call_groq(messages):
